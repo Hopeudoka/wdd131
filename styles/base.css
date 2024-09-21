@@ -15,13 +15,6 @@ h1,h2 {
     margin: 0;
 }
 
-h3 {
-    font-weight: lighter;
-    position: absolute;
-    top: 680px;
-    left: 80px;
-}
-
 .navigation {
     display: flex;
     list-style: none;
@@ -50,10 +43,15 @@ h3 {
     flex-wrap: wrap;
 }
 
+.me {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 main {
     display: grid;
-    grid-template-columns: 70% 30%;
-    max-width: 800rem;
+    grid-template-columns: auto auto;
+    max-width: 500rem;
 }
 
 .card {
@@ -61,16 +59,14 @@ main {
     margin: 10px; 
     border: 1px solid grey;
     border-radius: 10px;
-    padding-bottom: 50px;
 }
 
 .card h2 {
-    grid-column-start: 1;
-    grid-column-end: 7;
     margin-bottom: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 
 #country  {
     background-color: white;
@@ -87,9 +83,11 @@ img {
     float: right;
 }
 
-#flag {
+figure {
     float: left;
+    text-align: center;
 }
+
 
 p {
     padding: 20px;
