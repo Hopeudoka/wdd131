@@ -10,15 +10,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <script defer src="scripts/getdates.js"></script>
     </head>
     <body>
         <header>
             <h1 class="header">WDD 131: Dynamic Web Fundamentals - Hope I. Udoka</h1>
             <nav>
                 <ul class="navigation wrap">
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">I-Learn</a></li>
-                    <li><a href="">Scripture</a></li>
+                    <li><a href="www.linkedin.com/in/hope-udoka">LinkedIn</a></li>
+                    <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41">Scripture</a></li>
                     <li><a href="#">Final Project</a></li>
                 </ul>
             </nav>
@@ -26,6 +27,7 @@
 
         <main>
             <section class="card">
+                <div class="me">
                 <h2>About me</h2>
                 <img src="images/hope_udoka_profile_picture.jpg" alt="Apicture of the author-Hope Udoka wearing a white and tie.">
                 <p>My name is Hope Ini Udoka. I live in a little town called Eket in Akwa Ibom State, Nigeria. 
@@ -38,22 +40,31 @@
                     will help me secure a good job, which will give me experience in the world of technology, and help 
                     me start my own company.
                 </p>
+
                 <h2 id="country">Uyo, Nigeria</h2>
-                <fieldset>
-                    <figure>
-                        <img src="images/nigerian_flag.jpg" alt="A picture of the Nigerian Flag. Colors are Green and white.">
-                    </figure>
-                    <figcaption>Official Flag of Nigeria</figcaption>
-                </fieldset>
+
+                <img id="flag" src="images/nigerian_flag.jpg" alt="A picture of the Nigerian Flag. Colors are Green and white.">
+                <h3>Flag of Nigeria</h3>
+
                 <p>Nigeria, located in West Africa, is a diverse and vibrant country known for its rich cultural heritage, 
                     bustling cities, and natural beauty. With a population exceeding 200 million people, it is the most populous 
                     country in Africa and the seventh most populous in the world.
                 </p>
+                </div>
             </section>
 
             <section class="card">
-                <h2>Web Dev Resources</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit quo consequuntur voluptatum, maiores et! Unde sunt aperiam quod suscipit corporis hic, quos, ullam labore ab repellendus, error illum quibusdam.</p>
+                <div>
+                    <h2 id="resources">Web Dev Resources</h2>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                        <li><a href="https://devdocs.io/">DevDocs</a></li>
+                        <li><a href="https://www.wappalyzer.com/">Wappalyzer</a></li>
+                        <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                        <li><a href="https://overapi.com/">OverAPI</a></li>
+                        <li><a href="https://daily.dev/">Daily.dev</a></li>
+                    </ul>
+                </div>
             </section>
         </main>
 
@@ -61,11 +72,7 @@
             <p>
                 &copy;<span id="currentyear"></span> | Hope Ini Udoka | Nigeria
             </p>
-
-            <p id="lastModified">
-                
-            </p>
-
+            <p id="lastModified"></p>
         </footer>
     </body>
 </html>
