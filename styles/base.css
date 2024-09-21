@@ -35,8 +35,8 @@ h1,h2 {
 }
 
 .navigation a:hover {
-    border-bottom: 1px solid orange;
-    font-weight: bold;
+    text-decoration: underline;
+    color: white;
 }
 
 .wrap {
