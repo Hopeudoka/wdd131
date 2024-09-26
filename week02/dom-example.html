@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+    <style>
+        .highlight {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+      <section>
+        <img src="images/dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+      </section>
+      <script>
+        const link = document.querySelector("a")
+        link.textContent = "Mozilla Developer Network";
+        link.href = "https://developer.mozilla.org";
+
+        const sect = document.querySelector("section");
+        const para = document.createElement("p");
+        para.textContent = "we hope you enjoyed the ride.";
+        sect.appendChild(para);
+
+        const text = document.createTextNode(
+            "- the premier source of web development knowledge."
+        );
+        const linkPara = document.querySelector("p");
+        linkPara.appendChild(text);
+
+        // If we wanted to move the paragraph with the 
+        // link inside it to the bottom of the section, we could do this:
+        sect.appendChild(linkPara);
+        // remove a node 
+        //sect.removeChild(linkPara);
+        // or
+        // linkPara.remove()
+        // or for older browsers
+        linkPara.parentNode.removeChild(linkPara);
+
+        // para.style.color = "white"
+        // para.style.backgroundColor = "black";
+        // para.style.padding = "10px";
+        // para.style.width = "250px";
+        // para.style.textAlign = "center";
+
+        para.setAttribute("class", "highlight");
+      </script>
+    </body>
+</html>
