@@ -27,9 +27,10 @@ img {
 #menu {
     display: block;
     background-color: #eee;
-    padding: 5px;
+    /* padding: 5px; */
     text-decoration: none;
     cursor: pointer;
+    padding: .5rem .75rem;
 }
 
 .navigation {
@@ -44,20 +45,26 @@ img {
     display: none;
     /* flex: 1 1 100%; */
     /* text-align: center; */
-    /* padding: 5px; */
 }
 
 .navigation a {
     display: block;
-    transition: 0.5s;
+    transition: 0.2s;
     text-align: left;
     text-decoration: none;
     color: black;
+    padding: 3px;
 }
 
-.navigation li:hover {
+/* .navigation li:hover {
+    /* background-color: #FFE6A7; */
+    /* border-bottom: 1px solid #ffe6a7; 
+} */
+
+.navigation a:hover {
     background-color: #FFE6A7;
-    /* border-bottom: 1px solid #ffe6a7; */
+    text-decoration: underline;
+    color: darkblue;
 }
 
 main {
@@ -99,9 +106,14 @@ footer p {
 }
 
 .show li {
-    display: block;
+    display: grid;
+    padding: 5px;
 }
 
 #menu.show::before {
     content: "x";
+}
+
+.show {
+    padding: 0;
 }
