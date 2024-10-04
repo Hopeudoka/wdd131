@@ -26,6 +26,11 @@ h1 {
     width: 100%;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 .data, .weather {
     display: flex;
     justify-content: center;
