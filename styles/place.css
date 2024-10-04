@@ -1,0 +1,33 @@
+.root {
+    --color: black;
+    --primary-color: #6a994e;
+    --secondary-color: #f2e8cf;
+    --extra-color: #a7c957;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background-color: #6a994e;
+    padding: 50px;
+    margin: 0;
+    width: 100%;
+}
+
+h1 {
+    background-color: #f2e8cf;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.data, .weather {
+    display: flex;
+    justify-content: center;
+}
+
