@@ -38,6 +38,7 @@ h2 {
     padding: 0 0 10px 0;
 }
 
+
 .data, .weather {
     display: grid;
     justify-content: center;
@@ -45,6 +46,8 @@ h2 {
     margin-top: 10px;
     border-top: solid 0.5px whitesmoke;
 }
+
+
 
 footer {
     text-align: center;
