@@ -1,8 +1,8 @@
 :root {
     --color: black;
-    --primary-color: #6a994e;
+    --primary-color: #0e3b0c;
     --secondary-color: #ffffff;
-    --extra-color: #a7c957;
+    --extra-color: #6a994e;
 }
 
 body{
@@ -57,5 +57,5 @@ footer {
 }
 
 footer p {
-    color: var(--color);
+    color: var(--secondary-color);
 }

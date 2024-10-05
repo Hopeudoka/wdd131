@@ -1,9 +1,9 @@
 @media only screen and (min-width: 65em) {
     :root {
         --color: black;
-        --primary-color: #6a994e;
+        --primary-color: #0e3b0c;
         --secondary-color: #ffffff;
-        --extra-color: #a7c957;
+        --extra-color: #6a994e;
     }
 
     .larger-screen {
