@@ -1,0 +1,23 @@
+img {
+    width: 400px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    /* padding: 10px; */
+    background: black;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+}
