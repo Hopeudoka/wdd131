@@ -100,6 +100,8 @@ const temples = [
     },
 ];
 
+showAllTemples()
+
 function displayTemples(temples) {
 const templeElement = document.querySelector('.container');
 templeElement.innerHTML = ''; // Clear previous results
