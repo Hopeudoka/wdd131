@@ -1,0 +1,27 @@
+:root {
+    --color: #000000;
+    --body-background-color: #FFFFF0;
+    --background-color: #BB9457;
+    --headings: #99582A;
+    --accents: #FFE6A7;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--body-background-color);
+}
+
+h1, h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--headings);
+    padding: 10px;
+}
+
+.wireframe {
+    display: flex;
+    justify-content: space-around;
+}
