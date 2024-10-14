@@ -21,7 +21,6 @@ h1, h2 {
     padding: 10px;
 }
 
-.wireframe {
-    display: flex;
-    justify-content: space-around;
+#desktop img {
+    width: 300px;
 }

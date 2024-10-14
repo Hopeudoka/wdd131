@@ -1,0 +1,10 @@
+@media only screen and (min-width: 54em) {
+    .wireframe {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #desktop img {
+        width: auto;
+    }
+}
