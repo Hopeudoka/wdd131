@@ -1,0 +1,6 @@
+@media only screen and (min-width: 32rem) {
+
+    .radio-container {
+        max-width: 300px;
+    }
+}

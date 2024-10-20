@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Review</title>
+        <meta name="author" content="Hope Ini Udoka">
+        <meta name="description" content="A product review page that uses a form">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/form-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <script defer src="scripts/form.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+
+        <main>
+            <form method="get" action="review.html" class="reviewform">
+                <label>Product Name <select id="prodName" name="prodName" required>
+                    <option value="" disabled selected>Select a Product... &#9662;</option>
+                </select></label>
+
+                <div>Overall Rating</div>
+                <div class="radio-container">
+                    <div class="radio">
+                    <label for="oneStar">&star;</label>
+                    <input type="radio" id="oneStar" name="rating" required>
+                    </div>
+
+                    <div class="radio">
+                    <label for="twoStar">&star;&star;</label>
+                    <input type="radio" id="twoStar" name="rating" required>
+                    </div>
+                    
+                    <div class="radio">
+                    <label for="threeStar">&star;&star;&star;</label>
+                    <input type="radio" id="threeStar" name="rating" required> 
+                    </div>
+                    
+                    <div class="radio">
+                    <label for="fourStar">&star;&star;&star;&star;</label>
+                    <input type="radio" id="fourStar" name="rating" required> 
+                    </div>
+                    
+                    <div class="radio">
+                    <label for="fiveStar">&star;&star;&star;&star;&star;</label>
+                    <input type="radio" id="fiveStar" name="rating" required>
+                    </div>
+                </div>
+                
+                <label>Date of Installation <input type="date" id="date" name="date" required></label>
+            
+                <div>Which features did you find useful in the product?</div>
+                <div class="apply">(Check all that apply)</div>
+                <div class="checkbox">
+                    <label><input type="checkbox" id="durability" name="durability"> Durability</label>
+                    <label><input type="checkbox" id="easeUse" name="easeUse"> Ease of Use</label>
+                    <label><input type="checkbox" id="perfor" name="perfor"> Performance</label>
+                    <label><input type="checkbox" id="design" name="design"> Design</label>
+                </div>
+
+                <label>Written Review <span class="opt">(Optional)</span>
+                    <textarea id="textarea" name="textarea">
+
+                    </textarea>
+                </label>
+            
+                <label>Your Name <span class="opt">(Optional)</span> <input type="text" id="userName" name="userName"></label>
+            
+                <input type="submit" value="Send Review">
+            </form>
+        </main>
+
+        <footer>
+            <p>
+                &copy;<span id="currentyear"></span> | Hope Ini Udoka | Nigeria
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
