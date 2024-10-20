@@ -92,12 +92,21 @@ label {
     margin-top: 0;
 }
 
-.reviewform input:required {
+.reviewform input:required,
+.reviewform select:required {
     border-bottom: solid 8px var(--extra--color5);
 }
+.reviewform input[type="radio"]:required {
+    outline: 2px solid var(--extra--color5);
+}
 
-.reviewform input:required:valid {
+.reviewform input:required:valid,
+.reviewform select:required:valid { 
     border-bottom: solid 8px var(--extra--color4);
+}
+
+.reviewform input[type="radio"]:required:valid {
+    outline: 2px solid var(--extra--color4);
 }
 
 footer {
