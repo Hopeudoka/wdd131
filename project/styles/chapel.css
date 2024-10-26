@@ -120,6 +120,10 @@ nav {
     place-items: center;
 }
 
+.picture img {
+    width: 200px;
+}
+
 a {
     text-decoration: none;
     color: var(--extra-color2);
