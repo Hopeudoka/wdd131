@@ -50,6 +50,7 @@
     
     header {
         display: flex;
+        margin: 10px;
     }
 
     nav {
