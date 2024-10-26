@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lds Ibiono Stake Center</title>
         <meta name="author" content="description">
-        <meta name="description" content="Homepage for Oko-ita stake center building.">
+        <meta name="description" content="A contact page with a form to request for a chapel tour.">
         <link rel="stylesheet" href="styles/chapel.css">
         <link rel="stylesheet" href="styles/chapel-larger.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,22 +15,69 @@
     </head>
     <body>
         <header>
-            <h1>LDS Oko-ita Stake Center</h1>
-            <nav>
+            <h1>Contact</h1>
+            <a id="menu" href="#"></a>
+            <nav class="navigation">
                 <ul>
                     <l1><a href="index.html">Home</a></l1>
-                    <l1><a href="about.html">About</a></l1>
+                    <l1><a href="gallery.html">Gallery</a></l1>
                     <l1><a href="#">Contact</a></l1>
                 </ul>
             </nav>
         </header>
 
         <main>
+            <div class="pg3Contact">
+                <picture id="firstImage">
+                    <source media="(min-width: 1000px)" srcset="images/u-missionary3.webp">
+                    <source media="(min-width: 500px)" srcset="images/u-missionary2.webp">
+                    <img src="images/u-missionary1.webp" alt="" loading="lazy" width="1500" height="750">
+                </picture>
+                <!-- <button id="gallery">View Image Gallery</button> -->
+            </div>
 
+            <div>
+            <p>Fill out the the form below to contact the missionaries for a chapel tour.</p>
+            </div>
+
+            <form method="get" class="tourform" action="success.html">
+                <h2>Request a Chapel Tour</h2>
+
+                <fieldset>
+                    <legend>Personal info</legend>
+                    <label>First Name <input type="text" name="fName" required></label>
+                    <label>Last Name <input type="text" name="lName" required></label>
+                    
+                    <div>Gender <span class="optional">(Optional)</span></div>
+                    <label>Male <input type="radio" value="male" name="gender"></label>
+                    <label>Female <input type="radio" value="female" name="gender"></label>
+                    <label>Prefer not to say <input type="radio" value="notsay" name="gender"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact info</legend>
+                    <label>Phone No. <span class="optional">(Optional)</span><input type="tel" name="tel" placeholder="12345678900"></label>
+                    <label>Email <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Appointment</legend>
+                    <label>Date and time <input type="datetime-local"  name="date" required></label>
+                    
+                    <label>Tour Topic 
+                        <select id="topic" name="topic" required>
+                            <option value="" disabled selected>Please select... &#9662;</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Request Tour">
+            </form>
         </main>
 
         <footer>
-
+            <p>&copy;<span id="year"></span> | <a href="" target="_blank">Hope Ini Udoka</a> | Nigeria</p>
+            <p id="lastModified"></p>
         </footer>
     </body>
 </html>

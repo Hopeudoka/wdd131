@@ -1,0 +1,243 @@
+/* Color 1: BB9457 Color 2: 99582A Color 3: FFE6A7 Color 4: FFFFF0 color 5: 000000
+page background color: FFFFF0 background color: BB9457 headings: 99582A accents: FFE6A7 color: 000000 */
+
+:root {
+    --page-background: #FFFFF0;
+    --background-color: #BB9457;
+    --heading-color: #99582A;
+    --extra-color1: #FFE6A7;
+    --extra-color2: #000000;
+    --body-font: "Roboto", sans-serif;
+    --heading-font: "Merriweather" serif;
+}
+
+
+body {
+    background-color: var(--page-background);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 10px;
+}
+/* header {
+    padding: 20px;
+    margin: 0;
+    background-image: linear-gradient(#e0cfb2, #BB9457);
+    display: flex;
+    border-bottom: 1px solid var(--extra-color2);
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 15px; 
+} */
+
+ul {
+    padding: 0;
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+nav {
+	background-color: var(--background-color);
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: var(--extra-color2);
+	background-color: var(--background-color);
+}
+
+.navigation .show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+
+
+.gallery {
+    display: grid;
+    justify-content: center;
+    padding: 15px;
+}
+
+.contact {
+    display: grid;
+    justify-content: center;
+    padding: 15px;
+}
+
+.button {
+    background-color: var(--background-color);
+    margin: 10px 50px 10px 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--extra-color2);
+} 
+
+/* a:hover {
+    text-decoration: underline;
+} */
+
+/* nav {
+    padding: 0;
+    margin: 0;
+} */
+
+h1, h2 {
+    padding: 0;
+    margin: 0;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.facts {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--extra-color1);
+}
+
+figcaption {
+    text-align: center;
+}
+
+.tourform h2 {
+    padding-left: 15px;
+}
+
+.tourform {
+    border: 1px solid grey;
+    margin: 20px;
+    padding: 10px 0px;
+}
+
+.tourform fieldset {
+    margin: .9rem;
+}
+
+label {
+    display: block;
+    color: var(--heading-color);
+}
+
+.optional {
+    color: blue;
+}
+
+.tourform input[type="text"],
+.tourform input[type="tel"],
+.tourform input[type="email"],
+.tourform input[type="datetime-local"] {
+    display: block;
+    appearance: none;
+    margin-bottom: 10px;
+    padding: .75rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.tourform select {
+    width: 100%;
+    display: block;
+    appearance: none;
+    margin-bottom: 10px;
+    padding: .75rem;
+    border-radius: 12px;
+    max-width: 425px;
+}
+
+.tourform input[type="radio"] {
+    width: .75rem;
+}
+
+.tourform input[type="submit"] {
+    padding: .75rem;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    margin-left: 1.9rem;
+    width: 82%;
+    max-width: 425px;
+    background-image: linear-gradient(#e0cfb2, #BB9457);
+}
+
+.tourform input:required {
+    border-bottom: solid 8px red;
+}
+
+.tourform input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.tourform select:required {
+    border-bottom: solid 8px red;
+}
+
+.tourform select:required:valid {
+    border-bottom: solid 8px green;
+}
+
+ul {
+    margin: 0;
+}
+
+p {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background-image: linear-gradient(#e0cfb2, #BB9457);
+    padding: .1rem;
+    text-align: center;
+}
+
+footer p {
+    font-weight: normal;
+}
