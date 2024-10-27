@@ -7,6 +7,10 @@ page background color: FFFFF0 background color: BB9457 headings: 99582A accents:
     --heading-color: #99582A;
     --extra-color1: #FFE6A7;
     --extra-color2: #000000;
+    --extra-color3: #0000FF;
+    --extra-color4: #00FF00;
+    --extra-color5: #FF0000;
+    --extra-color6: #808080;
     --body-font: "Roboto", sans-serif;
     --heading-font: "Merriweather" serif;
 }
@@ -18,16 +22,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* header {
-    padding: 20px;
-    margin: 0;
-    background-image: linear-gradient(#e0cfb2, #BB9457);
-    display: flex;
-    border-bottom: 1px solid var(--extra-color2);
-    /* padding-bottom: 10px; */
-    /* margin-bottom: 15px; 
-} */
 
 ul {
     padding: 0;
@@ -41,20 +35,17 @@ ul {
 	text-decoration: none;
 	padding: .5rem .75rem;
 	background-color: #eee;
-	color: #000;
+	color: var(--extra-color2);
 }
 
 #menu::before {
 	content: "≡";
 }
 
-#menu.show::before {
-	content: "X";
-}
-
 nav {
 	background-color: var(--background-color);
 }
+
 .navigation {
 	list-style: none;
 	margin: 0 auto;
@@ -69,7 +60,7 @@ nav {
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
-	color: black;
+	color: var(--extra-color2);
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -80,9 +71,9 @@ nav {
 	background-color: var(--background-color);
 }
 
-.navigation .show li {
+.show li {
 	display: block;
-}
+} 
 
 #menu.show::before {
 	content: "X";
@@ -129,18 +120,10 @@ a {
     color: var(--extra-color2);
 } 
 
-/* a:hover {
-    text-decoration: underline;
-} */
-
-/* nav {
-    padding: 0;
-    margin: 0;
-} */
 
 h1, h2 {
     padding: 0;
-    margin: 0;
+    margin: 15px;
     font-family: var(--heading-font);
     color: var(--heading-color);
 }
@@ -165,7 +148,7 @@ figcaption {
 }
 
 .tourform {
-    border: 1px solid grey;
+    border: 1px solid var(--extra-color6);
     margin: 20px;
     padding: 10px 0px;
 }
@@ -180,7 +163,7 @@ label {
 }
 
 .optional {
-    color: blue;
+    color: var(--extra-color3);
 }
 
 .tourform input[type="text"],
@@ -221,24 +204,32 @@ label {
 }
 
 .tourform input:required {
-    border-bottom: solid 8px red;
+    border-bottom: solid 8px var(--extra-color5);
 }
 
 .tourform input:required:valid {
-    border-bottom: solid 8px green;
+    border-bottom: solid 8px var(--extra-color4);
 }
 
 .tourform select:required {
-    border-bottom: solid 8px red;
+    border-bottom: solid 8px var(--extra-color5);
 }
 
 .tourform select:required:valid {
-    border-bottom: solid 8px green;
+    border-bottom: solid 8px var(--extra-color4);
 }
 
 p {
     margin-left: 15px;
     font-weight: bold;
+}
+
+p a {
+    color: var(--extra-color3);
+}
+
+p a:hover {
+    color: var(--heading-color);
 }
 
 footer {
